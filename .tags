@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Quick Start	D:\work\blog\source\_posts\hello-world.md	/^## Quick Start$/;"	function	line:6
+Create a new post	D:\work\blog\source\_posts\hello-world.md	/^### Create a new post$/;"	function	line:8
+Run server	D:\work\blog\source\_posts\hello-world.md	/^### Run server$/;"	function	line:16
+Generate static files	D:\work\blog\source\_posts\hello-world.md	/^### Generate static files$/;"	function	line:24
+Deploy to remote sites	D:\work\blog\source\_posts\hello-world.md	/^### Deploy to remote sites$/;"	function	line:32
+todo test	D:\work\blog\source\_posts\question.md	/^# todo test$/;"	function	line:6
+1. nginx split dynamic & static	D:\work\blog\source\_posts\question.md	/^### 1. nginx split dynamic & static$/;"	function	line:7
+2. apigateway websockets route	D:\work\blog\source\_posts\question.md	/^### 2. apigateway websockets route$/;"	function	line:10
+3. microservice and MQ load balance	D:\work\blog\source\_posts\question.md	/^### 3. microservice and MQ load balance$/;"	function	line:12
+questions	D:\work\blog\source\_posts\questions-and-answer.md	/^### questions$/;"	function	line:7
