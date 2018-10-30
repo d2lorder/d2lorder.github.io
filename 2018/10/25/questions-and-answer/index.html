@@ -123,7 +123,7 @@
 
 
 
-  <title>question | Hexo</title>
+  <title>questions and answer | Hexo</title>
   
 
 
@@ -230,7 +230,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/25/question/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/25/questions-and-answer/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -247,7 +247,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">question</h1>
+          <h1 class="post-title" itemprop="name headline">questions and answer</h1>
         
 
         <div class="post-meta">
@@ -259,7 +259,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-25T16:13:40+09:00">2018-10-25</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-25T19:28:04+09:00">2018-10-25</time>
             
 
             
@@ -295,7 +295,29 @@
       
 
       
-        <h1 id="todo-test"><a href="#todo-test" class="headerlink" title="todo test"></a>todo test</h1><h3 id="1-nginx-split-dynamic-amp-static"><a href="#1-nginx-split-dynamic-amp-static" class="headerlink" title="1. nginx split dynamic &amp; static"></a>1. nginx split dynamic &amp; static</h3><h3 id="2-apigateway-websockets-route"><a href="#2-apigateway-websockets-route" class="headerlink" title="2. apigateway websockets route"></a>2. apigateway websockets route</h3><h3 id="3-microservice-and-MQ-load-balance"><a href="#3-microservice-and-MQ-load-balance" class="headerlink" title="3. microservice and MQ load balance"></a>3. microservice and MQ load balance</h3>
+        <h3 id="questions"><a href="#questions" class="headerlink" title="questions"></a>questions</h3><ol>
+<li>nginx split dynamic &amp; static<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">静态资源服务器一般用nginx</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">   listen       80;</span><br><span class="line">   server_name  localhost;</span><br><span class="line">   location / &#123;</span><br><span class="line">       root   html;</span><br><span class="line">       index  index.html index.htm;</span><br><span class="line">   &#125;</span><br><span class="line">   location /image/ &#123;</span><br><span class="line">       root   /usr/local/myImage/;</span><br><span class="line">       autoindex on;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>api gateway and cors</li>
+</ol>
+<p><img src="questions-and-answer/markdown-img-paste-20181027105906307.png" alt=""></p>
+<ol start="3">
+<li><p>apigateway websockets route</p>
+</li>
+<li><p>microservice and MQ load balance</p>
+</li>
+<li><p>docker &amp;&amp; httpServer</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker 只会占用一点点的cpu &amp; memory .</span><br><span class="line">网络可能会有开销 , 默认网络模式是:bridge , 修改为host 可以直接使用native network</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>hexo d</p>
+</li>
+<li><p>http socket ? long tcp</p>
+</li>
+</ol>
+
       
     </div>
     
@@ -319,8 +341,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/24/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/10/25/question/" rel="next" title="question">
+                <i class="fa fa-chevron-left"></i> question
               </a>
             
           </div>
@@ -328,10 +350,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/25/questions-and-answer/" rel="prev" title="questions and answer">
-                questions and answer <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -445,7 +463,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#todo-test"><span class="nav-number">1.</span> <span class="nav-text">todo test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-nginx-split-dynamic-amp-static"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. nginx split dynamic &amp; static</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-apigateway-websockets-route"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. apigateway websockets route</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-microservice-and-MQ-load-balance"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. microservice and MQ load balance</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#questions"><span class="nav-number">1.</span> <span class="nav-text">questions</span></a></li></ol></div>
             
 
           </div>
