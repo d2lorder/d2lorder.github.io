@@ -75,22 +75,25 @@
 
 
 
-<meta name="description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call single thread handle req use block transfer recommand to use when">
+<meta name="description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call  kernel mode &amp;amp;&amp;amp; application mode     single thread handle">
 <meta property="og:type" content="article">
 <meta property="og:title" content="zuul_push.md">
 <meta property="og:url" content="http://yoursite.com/2018/12/11/zuul-push-md/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call single thread handle req use block transfer recommand to use when">
+<meta property="og:description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call  kernel mode &amp;amp;&amp;amp; application mode     single thread handle">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/bio.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/nio.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/multiplexing.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/kernal.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/aio.png">
 <meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/push-msg.png">
-<meta property="og:updated_time" content="2018-12-11T07:33:12.157Z">
+<meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/add.png">
+<meta property="og:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/reg.png">
+<meta property="og:updated_time" content="2018-12-12T03:17:14.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zuul_push.md">
-<meta name="twitter:description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call single thread handle req use block transfer recommand to use when">
+<meta name="twitter:description" content="BIO diagram    create / destory thread is expensive each thread need 0.5-1 MB memory context switch    NIO diagram     2 system call  kernel mode &amp;amp;&amp;amp; application mode     single thread handle">
 <meta name="twitter:image" content="http://yoursite.com/2018/12/11/zuul-push-md/images/2018/12/bio.png">
 
 
@@ -322,7 +325,13 @@
 <ul>
 <li><img src="images/2018/12/nio.png" alt="NIO"></li>
 <li><img src="images/2018/12/multiplexing.png" alt="multiplexing"></li>
-<li>2 system call</li>
+<li>2 system call<blockquote>
+<ul>
+<li>kernel mode &amp;&amp; application mode</li>
+<li><img src="images/2018/12/kernal.png" alt="kernal"></li>
+</ul>
+</blockquote>
+</li>
 <li>single thread handle req</li>
 <li>use block transfer</li>
 <li>recommand to use when connections &gt; 1k</li>
@@ -347,6 +356,19 @@
 <blockquote>
 <ul>
 <li><img src="images/2018/12/push-msg.png" alt="push_msg"></li>
+<li><img src="images/2018/12/add.png" alt="add"></li>
+<li><img src="images/2018/12/reg.png" alt="reg"></li>
+<li>push messaging share 90% code of Zuul2</li>
+<li>major component: zuul server (stateful), message processor , Kafka , Redis</li>
+<li>randomize</li>
+<li>zuul push optimalize<blockquote>
+<ul>
+<li>create m4 machine rather than big vm</li>
+<li>websocket randomly close connections</li>
+<li>send command to let client close connection</li>
+</ul>
+</blockquote>
+</li>
 </ul>
 </blockquote>
 </li>
